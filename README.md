@@ -12,7 +12,7 @@ The major differences lie in:
 2. run `R_citation_network_Ext.R`
 
 3. Use Gephi to generate the network graph by loading the following files with "Import Spreadsheet".
-- nodes table: node_title.csv;
+- nodes table: node_title.csv
 - edges table: CitationEdges2021-05-22.csv
 
 ## Example of Network
