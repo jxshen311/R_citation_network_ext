@@ -1,4 +1,4 @@
-# R Citation Network based on Text Analysis
+# R Citation Network Based on Text Analysis
 This is an extension of A.R. Siders' R Script from [this ResearchGate question](https://www.researchgate.net/post/Is-there-any-recommended-software-to-visualise-articles-papers-references-when-conducting-a-systematic-review-or-meta-analysis).
 
 The major differences lie in:
@@ -12,8 +12,11 @@ The major differences lie in:
 2. run `R_citation_network_Ext.R`
 
 3. Use Gephi to generate the network graph by loading the following files with "Import Spreadsheet".
-- nodes table: node_title.csv; 
+- nodes table: node_title.csv;
 - edges table: CitationEdges2021-05-22.csv
 
+## Example of Network
+![](assets/README-d85af84f.png)
 
-
+## Note
+The folder "example_qac_e" contains a complete dataset of the R script, Scopus metadata, and expected outputs.
