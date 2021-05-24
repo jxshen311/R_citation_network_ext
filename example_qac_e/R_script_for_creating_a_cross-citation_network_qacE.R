@@ -83,7 +83,7 @@ CiteMatrix<-function(search.vector, Ref.corpus){
 # b. Titles: Column of paper titles in csv spreadsheet (Column #1) *in SAME ORDER* as documents in Papers folder. Need a header cell or top title will be removed. Could add other columns with attributes.
 # Organize Titles using same order.
 
-setwd("<directory where the repository is cloned>/R_citation_network_ext/example_qac_e")
+setwd("<directory where this R script is located>")
 # load csv files downloaded from scopus
 df_delta_e <- read.csv("scopus_delta_e.csv")[,c(3,15)]
 df_e_delta <- read.csv("scopus_e_delta.csv")[,c(3,15)]
@@ -114,7 +114,7 @@ write.csv(node_title, file="node_title.csv", row.names = FALSE)
 
 # STEP 2: Load inputs ----
 # a. Papers 
-papers<-Corpus(DirSource("/Users/jiaxianshen/Documents/HartmannLab/surface_metagenome_project/citation_network/qac_e/papers"))
+papers<-Corpus(DirSource("<directory where this R script is located>/papers"))
 
 # b. Titles
 titles<-as.vector(node_title[,1])
